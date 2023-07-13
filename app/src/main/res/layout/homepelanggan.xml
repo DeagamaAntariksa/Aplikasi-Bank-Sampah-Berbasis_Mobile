@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="408dp"
+        android:layout_height="234dp"
+        android:layout_marginTop="-27dp"
+        android:backgroundTint="@color/green3"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="193dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/logoutBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="30dp"
+                android:text="Logout" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="SELAMAT DATANG"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="REZA GANTENG"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PELANGGAN"
+                android:textSize="23dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="135dp"
+                android:textStyle="bold"
+                android:textAlignment="center"/>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="381dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="168dp"
+        android:backgroundTint="@color/white"
+        android:paddingBottom="16dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.588"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="\n \nSELAMAT DATANG \nTUKARKAN SAMPAH ANDA \nSEKARANG"
+                android:textStyle="bold"
+                android:textSize="17dp" />
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/tukersamp2" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="185dp"
+        android:layout_height="178dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/white"
+        app:cardCornerRadius="40dp"
+        app:cardElevation="8dp"
+        app:contentPaddingTop="16dp"
+        app:layout_constraintStart_toEndOf="@+id/cv_container"
+        app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="139dp"
+                android:layout_height="87dp"
+                android:layout_marginLeft="25dp"
+                android:src="@drawable/img" />
+
+            <Button
+                android:id="@+id/btnJenis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:text="JENIS SAMPAH" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_container"
+        android:layout_width="185dp"
+        android:layout_height="178dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/white"
+        android:paddingBottom="16dp"
+        app:cardCornerRadius="40dp"
+        app:cardElevation="8dp"
+        app:contentPaddingTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="139dp"
+                android:layout_height="63dp"
+                android:layout_marginLeft="25dp"
+                android:src="@drawable/truksampah123" />
+
+            <Button
+                android:id="@+id/btnJemput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="20dp"
+                android:text="JEMPUT" />
+
+        </LinearLayout>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="185dp"
+        android:layout_height="178dp"
+        android:backgroundTint="@color/white"
+        app:cardCornerRadius="40dp"
+        app:cardElevation="8dp"
+        app:contentPaddingTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cv_container"
+        app:layout_constraintVertical_bias="0.142">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="134dp"
+                android:layout_height="94dp"
+                android:layout_marginLeft="25dp"
+                android:src="@drawable/riwayat" />
+
+            <Button
+                android:id="@+id/btn_riwayat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:text="RIWAYAT" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="415dp"
+        android:layout_height="176dp"
+        android:layout_marginTop="-27dp"
+        android:backgroundTint="@color/green3"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/btn_back"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="-25dp"
+                android:layout_marginLeft="15dp"
+                android:background="@color/green3"
+                android:scaleType="fitXY"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="65dp"
+                android:layout_marginTop="65dp"
+                android:text="JENIS SAMPAH"
+                android:textAlignment="center"
+                android:textSize="23dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="389dp"
+        android:layout_height="214dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/white"
+        android:paddingBottom="16dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView1">
+        <TextView
+            android:id="@+id/tv_smphanorganik"
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:layout_marginTop="20dp"
+            android:text="Sampah Anorganik"
+            android:textAlignment="center"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="327dp"
+            android:layout_height="117dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="65dp"
+            android:text="Sampah anorganik adalah sampah yang sudah tidak dipakai lagi dan sulit terurai. Sampah anorganik yang tertimbun di tanah dapat menyebabkan pencemaran tanah karena sampah anorganik tergolong zat yang sulit terurai dan sampah itu akan tertimbun dalam tanah dalam waktu lama, ini menyebabkan rusaknya lapisan tanah."
+            android:textAlignment="center" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView1"
+        android:layout_width="389dp"
+        android:layout_height="214dp"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="@color/white"
+        android:paddingBottom="16dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:id="@+id/tv_smphorganik"
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:layout_marginTop="20dp"
+            android:text="Sampah Organik"
+            android:textAlignment="center"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="327dp"
+            android:layout_height="117dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="65dp"
+            android:text="Sampah organik bisa dikatakan sebagai
+sampah ramah lingkungan bahkan sampah
+bisa diolah kembali menjadi suatu yang
+bermanfaat bila dikelola dengan tepat.
+Tetapi sampah bila tidak dikelola dengan
+benar akan menimbulkan penyakit dan bau
+yang kurang sedap hasil dari pembusukan
+sampah organik yang cepat."
+            android:textAlignment="center" />
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.RegisterActivity"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/iv_circle"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/circle"
+        android:layout_marginStart="-80dp"
+        android:layout_marginTop="-80dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/green1" />
+
+    <ImageView
+        android:layout_width="260dp"
+        android:layout_height="260dp"
+        android:src="@drawable/circle"
+        android:layout_marginTop="-180dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/green2" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/circle"
+        android:layout_marginEnd="-100dp"
+        android:layout_marginBottom="-40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:tint="@color/green1" />
+
+    <ImageView
+        android:layout_width="320dp"
+        android:layout_height="320dp"
+        android:src="@drawable/circle"
+        android:layout_marginBottom="-240dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:tint="@color/green2" />
+
+
+    <TextView
+        android:id="@+id/tv_register"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="80dp"
+        android:text="Register"
+        android:textSize="40sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_circle"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_container"
+        android:layout_width="431dp"
+        android:layout_height="175dp"
+        android:layout_marginStart="-80dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="60dp"
+        android:backgroundTint="@color/white"
+        android:paddingBottom="16dp"
+        app:cardCornerRadius="80dp"
+        app:cardElevation="8dp"
+        app:contentPaddingTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_register">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_register_username"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="110dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_user"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/et_register_username"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="48dp"
+                android:background="@color/white"
+                android:hint="Username"
+                android:textColorHint="@color/black"
+                app:layout_constraintBottom_toBottomOf="@id/iv_register_username"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/iv_register_username"
+                app:layout_constraintTop_toTopOf="@id/iv_register_username" />
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/darker_gray"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/iv_register_username" />
+
+            <ImageView
+                android:id="@+id/iv_register_password"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="110dp"
+                android:layout_marginTop="16dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_lock"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view1" />
+
+            <EditText
+                android:id="@+id/et_register_password"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="48dp"
+                android:background="@color/white"
+                android:hint="Password"
+                android:textColorHint="@color/black"
+                app:layout_constraintBottom_toBottomOf="@id/iv_register_password"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/iv_register_password"
+                app:layout_constraintTop_toTopOf="@id/iv_register_password" />
+
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/darker_gray"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/iv_register_password" />
+
+            <ImageView
+                android:id="@+id/iv_register_email"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="110dp"
+                android:layout_marginTop="16dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_mail"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view2" />
+
+            <EditText
+                android:id="@+id/et_register_email"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="48dp"
+                android:background="@color/white"
+                android:hint="Email Address"
+                android:textColorHint="@color/black"
+                app:layout_constraintBottom_toBottomOf="@id/iv_register_email"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/iv_register_email"
+                app:layout_constraintTop_toTopOf="@id/iv_register_email" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:backgroundTint="@color/green3"
+        app:cardElevation="24dp"
+        app:cardCornerRadius="35dp"
+        app:layout_constraintStart_toEndOf="@+id/cv_container"
+        app:layout_constraintEnd_toEndOf="@+id/cv_container"
+        app:layout_constraintTop_toTopOf="@+id/cv_container"
+        app:layout_constraintBottom_toBottomOf="@+id/cv_container">
+
+        <ImageButton
+            android:id="@+id/btn_register"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_done"
+            android:scaleType="fitXY"
+            android:background="@color/green3"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-25dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/white"
+        app:cardElevation="8dp"
+        app:cardCornerRadius="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tv_register">
+
+        <Button
+            android:id="@+id/btn_go_to_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:paddingStart="25dp"
+            android:paddingEnd="50dp"
+            android:text="Login"
+            android:textColor="@color/black"
+            android:textAllCaps="false"
+            android:background="@android:color/transparent"
+            android:elevation="0dp"/>
+    </androidx.cardview.widget.CardView>
+
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:elevation="10dp"
+        android:visibility="gone"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
